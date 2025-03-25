@@ -4,41 +4,46 @@ const chapters = [
     title: "Evaluate Mathematical Expressions in Python",
     details:
       "Learn how to evaluate mathematical expressions using Python's eval() function.",
+      status: "completed",  
     topics: [
       {
         id: 1,
         title: "Merge Two Lists Without Using Extend",
         type: "regular",
+        status: "completed",
         subtopics: [
-          { id: 1, title: "Using + Operator to Merge Lists" },
-          { id: 2, title: "Merging Lists with List Comprehension" },
+          { id: 1, title: "Using + Operator to Merge Lists", status: "completed" },
+          { id: 2, title: "Merging Lists with List Comprehension", status: "completed" },
         ],
       },
       {
         id: 2,
         title: "Lambda Functions in Python",
         type: "regular",
+        status: "progress",
         subtopics: [
-          { id: 1, title: "Syntax and Basic Usage of Lambda Functions" },
-          { id: 2, title: "Using Lambda with Built-in Functions" },
+          { id: 1, title: "Syntax and Basic Usage of Lambda Functions", status: "progress" },
+          { id: 2, title: "Using Lambda with Built-in Functions", status: "progress" },
         ],
       },
       {
         id: 3,
         title: "Using Map and Filter Functions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: " Applying Functions to Lists with map()" },
-          { id: 2, title: "Filtering Data Efficiently with filter()" },
+          { id: 1, title: " Applying Functions to Lists with map()", status: "incomplete" },
+          { id: 2, title: "Filtering Data Efficiently with filter()", status: "incomplete" },
         ],
       },
       {
         id: 4,
         title: "List Comprehensions in Python",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete" },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
@@ -56,41 +61,46 @@ const chapters = [
     title: "Working with Strings in Python",
     details:
       "Explore different methods to manipulate and process strings in Python.",
+      status: "progress",
     topics: [
       {
         id: 1,
         title: "String Slicing and Indexing",
         type: "regular",
+        status: "progress",
         subtopics: [
-          { id: 1, title: "Extracting Substrings with Slicing" },
-          { id: 2, title: "Negative Indexing in Strings" },
+          { id: 1, title: "Extracting Substrings with Slicing", status: "progress" },
+          { id: 2, title: "Negative Indexing in Strings", status: "progress" },
         ],
       },
       {
         id: 2,
         title: "String Formatting",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Using f-strings for Dynamic Formatting" },
-          { id: 2, title: "Formatting with str.format() Method" },
+          { id: 1, title: "Using f-strings for Dynamic Formatting", status: "incomplete" },
+          { id: 2, title: "Formatting with str.format() Method", status: "incomplete" },
         ],
       },
       {
         id: 3,
         title: "Using Map and Filter Functions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Applying Functions to Lists with map()" },
-          { id: 2, title: "Filtering Elements with Custom Conditions" },
+          { id: 1, title: "Applying Functions to Lists with map()", status: "incomplete" },
+          { id: 2, title: "Filtering Elements with Custom Conditions", status: "incomplete" },
         ],
       },
       {
         id: 4,
         title: "Using Regular Expressions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Pattern Matching with re.search()" },
-          { id: 2, title: "Extracting Data with re.findall()" },
+          { id: 1, title: "Pattern Matching with re.search()", status: "incomplete" },
+          { id: 2, title: "Extracting Data with re.findall()", status: "incomplete" },
         ],
       },
       {
@@ -108,25 +118,28 @@ const chapters = [
     title: "Understanding Python Data Structures",
     details:
       "Learn about lists, tuples, sets, and dictionaries and their use cases.",
+      status: "incomplete",
     topics: [
       {
         id: 1,
         title: "Lists and Tuples",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Mutable vs Immutable Sequences" },
-          { id: 2, title: "Common List and Tuple Operations" },
+          { id: 1, title: "Mutable vs Immutable Sequences", status: "incomplete" },
+          { id: 2, title: "Common List and Tuple Operations", status: "incomplete" },
         ],
       },
       {
         id: 2,
         title: "Dictionaries and Sets",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Key-Value Pair Manipulation in Dictionaries" },
+          { id: 1, title: "Key-Value Pair Manipulation in Dictionaries", status: "incomplete" },
           {
             id: 2,
-            title: "Set Operations: Union, Intersection, and Difference",
+            title: "Set Operations: Union, Intersection, and Difference", status: "incomplete"
           },
          ],
       },
@@ -134,18 +147,20 @@ const chapters = [
         id: 3,
         title: "Using Map and Filter Functions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Transforming Lists with map()" },
-          { id: 2, title: "Filtering Data Using Lambda Functions" },
+          { id: 1, title: "Transforming Lists with map()", status: "incomplete" },
+          { id: 2, title: "Filtering Data Using Lambda Functions", status: "incomplete" },
         ],
       },
       {
         id: 4,
         title: "Nested Data Structures",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "Accessing Elements in Nested Lists and Dictionaries" },
-          { id: 2, title: "Iterating Through Complex Data Structures" },
+          { id: 1, title: "Accessing Elements in Nested Lists and Dictionaries", status: "incomplete" },
+          { id: 2, title: "Iterating Through Complex Data Structures", status: "incomplete" },
         ],
       },
       {
@@ -162,41 +177,46 @@ const chapters = [
     title: "Evaluate Mathematical Expressions in Python",
     details:
       "Learn how to evaluate mathematical expressions using Python's eval() function.",
+      status: "incomplete",
     topics: [
       {
         id: 1,
         title: "Merge Two Lists Without Using Extend",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete", },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete", },
         ],
       },
       {
         id: 2,
         title: "Lambda Functions in Python",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete", },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
         id: 3,
         title: "Using Map and Filter Functions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete" },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
         id: 4,
         title: "List Comprehensions in Python",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete", },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete", },
         ],
       },
       {
@@ -214,41 +234,45 @@ const chapters = [
     title: "Evaluate Mathematical Expressions in Python",
     details:
       "Learn how to evaluate mathematical expressions using Python's eval() function.",
+      status: "incomplete",
     topics: [
       {
         id: 1,
         title: "Merge Two Lists Without Using Extend",
         type: "regular",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete", },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
         id: 2,
         title: "Lambda Functions in Python",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete" },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
         id: 3,
         title: "Using Map and Filter Functions",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete" },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {
         id: 4,
         title: "List Comprehensions in Python",
         type: "regular",
+        status: "incomplete",
         subtopics: [
-          { id: 1, title: "List Comprehensions with If-Else" },
-          { id: 2, title: "Nested List Comprehensions" },
+          { id: 1, title: "List Comprehensions with If-Else", status: "incomplete" },
+          { id: 2, title: "Nested List Comprehensions", status: "incomplete" },
         ],
       },
       {

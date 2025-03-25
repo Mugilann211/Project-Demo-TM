@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import chapters from "../../data/chapters";
+import c1 from "../../assets/c1.png";
 
 const Python = () => {
   const [chapterAnchor, setChapterAnchor] = useState(null);
@@ -56,19 +57,20 @@ const Python = () => {
   return (
     <div className="div2 flex items-center">
       <div className="bg mt-3">
-        <p className="ml-2">Python Course</p>
+        <p className="ml-2 ">Python Course</p>
       </div>
 
       {/* Chapter Menu */}
       <IconButton color="" size="small" onClick={handleChapterClick}>
         <img className="w-[13px] h-[18px] ml-3" src={book} alt="Book" />
-        <p className="truncate-text text-black ml-2">
+        <p className="truncate-text text-black ml-2 font-['Poppins']">
           Chapter - {selectedChapter.id}: {selectedChapter.title}
         </p>
       </IconButton>
       <Menu anchorEl={chapterAnchor} open={Boolean(chapterAnchor)} onClose={() => handleChapterClose()}>
         {chapters.map((chapter) => (
-          <MenuItem key={chapter.id} onClick={() => handleChapterClose(chapter)}>
+          <MenuItem className="font-['Poppins']" key={chapter.id} onClick={() => handleChapterClose(chapter)}>
+            <img className="w-[25.5px] h-[25.5px] -ml-2 mr-2" src={c1} alt=""/>
             Chapter - {chapter.id}: {chapter.title}
           </MenuItem>
         ))}
@@ -83,7 +85,7 @@ const Python = () => {
         <>
           <IconButton color="" size="small" onClick={handleTopicClick}>
             <img className="w-[13px] h-[18px] ml-3" src={paper} alt="Paper" />
-            <p className="truncate-text text-black ml-2">
+            <p className="truncate-text text-black ml-2 font-['Poppins']">
               Topic - {selectedTopic?.id}: {selectedTopic?.title}
             </p>
           </IconButton>
@@ -91,7 +93,8 @@ const Python = () => {
             {selectedChapter.topics
               .filter((topic) => topic.type === "regular")
               .map((topic) => (
-                <MenuItem key={topic.id} onClick={() => handleTopicClose(topic)}>
+                <MenuItem className="font-['Poppins']" key={topic.id} onClick={() => handleTopicClose(topic)}>
+                  <img className="w-[25.5px] h-[25.5px] -ml-2 mr-2" src={c1} alt=""/>
                   Topic - {topic.id}: {topic.title}
                 </MenuItem>
               ))}
@@ -108,13 +111,14 @@ const Python = () => {
         <>
           <IconButton size="small" onClick={handleSubtopicClick}>
             <img className="w-[13px] h-[18px] ml-3" src={bar} alt="Bar" />
-            <p className="truncate-text text-black ml-2">
+            <p className="truncate-text text-black ml-2 font-['Poppins']">
               Subtopic - {selectedSubtopic?.id}: {selectedSubtopic?.title}
             </p>
           </IconButton>
           <Menu anchorEl={subtopicAnchor} open={Boolean(subtopicAnchor)} onClose={() => handleSubtopicClose()}>
             {selectedTopic.subtopics.map((subtopic) => (
-              <MenuItem key={subtopic.id} onClick={() => handleSubtopicClose(subtopic)}>
+              <MenuItem className="font-['Poppins']" key={subtopic.id} onClick={() => handleSubtopicClose(subtopic)}>
+                <img className="w-[25.5px] h-[25.5px] -ml-2 mr-2" src={c1} alt=""/>
                 Subtopic - {subtopic.id}: {subtopic.title}
               </MenuItem>
             ))}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cg from "../../assets/cg.png";
 import c1 from "../../assets/c1.png";
 import arrow from "../../assets/down.png";
 import dropup from "../../assets/up.png";
@@ -6,8 +7,13 @@ import info from "../../assets/info.png";
 import info1 from "../../assets/info1.png";
 import info2 from "../../assets/infosub.png";
 import sub from "../../assets/sub.png";
-import chapters from "../../data/chapters"; // Importing chapter data
-import topicsData from "../../data/topics"; // Importing topics and subtopics
+import chapters from "../../data/chapters";
+import topicsData from "../../data/topics";
+import bgrey from "../../assets/bookgrey.png";
+import mgrey from "../../assets/minigrey.png";
+import spur from "../../assets/subpur.png";
+import tgrey from "../../assets/topicgrey.png";
+import tpur from "../../assets/topicpur.png";
 
 const Home = () => {
   const [isOpenChapter, setIsOpenChapter] = useState(null);
@@ -23,6 +29,7 @@ const Home = () => {
   const handleTopicClick = (topicId) => {
     setIsOpenTopic((prevTopic) => (prevTopic === topicId ? null : topicId));
   };
+  
 
   return (
     <div className="flex flex-col font-['Poppins'] mr-7 w-full gap-3">
@@ -40,16 +47,20 @@ const Home = () => {
               className="ml-3 flex gap-2 items-center bg-[#E1EAFF] shadow-md cursor-pointer"
               onClick={() => handleChapterClick(chapter.id)}
             >
-              <img className="w-[25.5px] h-[25.5px] ml-1" src={c1} alt="" />
+              <img className="w-[25.5px] h-[25.5px] ml-1" src={c1} alt=""/>
               <p>Chapter - {chapter.id}</p>
               <img
                 className="ml-5 mr-2"
                 src={isOpenChapter === chapter.id ? dropup : arrow}
                 alt=""
+                
               />
             </div>
 
-            <div className="flex flex-row grow ml-3 h-[35px] bg-[#E1EAFF] cursor-pointer shadow-md justify-between"onClick={() => handleChapterClick(chapter.id)}>
+            <div
+              className="flex flex-row grow ml-3 h-[35px] bg-[#E1EAFF] cursor-pointer shadow-md justify-between"
+              onClick={() => handleChapterClick(chapter.id)}
+            >
               <p className="ml-3 mt-1">{chapter.title}</p>
               <img className="h-[15px] w-[15px] mt-3 mr-4" src={info} alt="" />
             </div>
@@ -67,13 +78,13 @@ const Home = () => {
                 <div key={topic.id}>
                   {/* Topic Section */}
                   <div
-                    className="flex flex-row pr-5 mt-3 text-[17px] font-['Poppins'] cursor-pointer"
+                    className="flex flex-row pr-5 mt-3 font-['Poppins'] cursor-pointer"
                     onClick={() => handleTopicClick(topic.id)}
                   >
                     <div className="ml-3 flex gap-2 items-center shadow-md bg-[#FFEBBD]">
                       <img
                         className="w-[25.5px] h-[25.5px] ml-1"
-                        src={c1}
+                        src={tgrey}
                         alt=""
                       />
                       <p>Topic - {topic.id}</p>
@@ -134,7 +145,7 @@ const Home = () => {
                   {/* Mini Task Section (After Every 2 Topics) */}
                   {(index + 1) % 2 === 0 && (
                     <div className="flex flex-row w-full pr-3 mt-3 text-[17px] font-['Poppins']">
-                      <div className="ml-3 flex w-[142px] gap-2 items-center bg-[#FFD5F1] shadow-md">
+                      <div className="ml-3 flex w-[150px] gap-2 items-center bg-[#FFD5F1] shadow-md">
                         <div className="w-[25.5px] h-[25.5px] mt-0 ml-1">
                           <img src={c1} alt="" />
                         </div>

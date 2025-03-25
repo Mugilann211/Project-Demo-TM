@@ -7,14 +7,14 @@ import pen from "../../assets/pen.png";
 const Sidebar = () => {
   return (
     <nav>
-      <div className="cursor-pointer">
+      <div className="cursor-pointer font-['Poppins'] ">
         <div className="">
           <img
             className="w-[43px] h-[35px] ml-3 mt-5 mb-o"
             src={prog}
             alt="Progress"
           />
-          <p className="ml-2">Progress</p>
+          <p className="ml-2 text-xs">Progress</p>
         </div>
 
         <div className="">
@@ -23,7 +23,7 @@ const Sidebar = () => {
             src={sat}
             alt="statistics"
           />
-          <p className="ml-2">Statistics</p>
+          <p className="ml-1 text-xs">Statistics</p>
         </div>
 
         <div className="">
@@ -32,7 +32,7 @@ const Sidebar = () => {
             src={note}
             alt="notes"
           />
-          <p className="ml-3">Notes</p>
+          <p className="ml-3 text-xs">Notes</p>
         </div>
 
         <div className="">
@@ -41,7 +41,7 @@ const Sidebar = () => {
             src={pen}
             alt="highlights"
           />
-          <p className="mr-0">Highlights</p>
+          <p className="mr-0 mt-1 text-sm">Highlights</p>
         </div>
       </div>
     </nav>
